@@ -1,0 +1,28 @@
+History
+
+v1:
+- initial release
+v2:
+- added support for file attributes (not for Unix based systems)
+- improved whole code (it should be much easier to modify the code now)
+v2.1:
+- fixed a bug causing directories containg no subfolders not being copied
+  (affecting lines 181-182) -- SPECIAL THANKS TO onivan!
+- fixed a bug causing an error on Unix machines (affecting line 292) --
+  SPECIAL THANKS TO Caladan!
+2020.05.31: changes by Alexey Torgashin
+2022.01.24: changes by Josh:
+- Added _copyAllFiles _copyOnlyIfExists,_copyIfNewer,_copyIfSizeChanged, _abortcopy,_copycomparefiles:Boolean
+- Ability to AbortCopy Routine by useer setting _Abortcopy to true in GUI.
+- Ability To Keep App Responsive
+  _AppProcessMessagesCounterInterval:integer;
+  _keepalive:boolean;
+- Configureable Buffer Copy
+  _usebufferedcopy:boolean;
+  _comparebuffersize:LongInt;
+  _CopyBuffer,_CompBuffer1,_CompBuffer2:Array of Byte;
+  _copybuffersize:LongInt;
+- Variables to keep Track of Routine for User
+  _CopyDirProcessedFromFile:String;
+  _CopyDirProcessedFromFileSize:int64;
+  _TotalBytesToCopy,_TotalByteProcessed,_ActutalBytesCopied,_appproctickcounter:Qword;

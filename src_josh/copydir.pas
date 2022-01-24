@@ -31,23 +31,6 @@
 *  ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 *  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 *  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-*
-*  History:
-*  --------
-*  v1:
-*     - initial release
-*  v2:
-*     - added support for file attributes (not for Unix based systems)
-*     - improved whole code (it should be much easier to modify the code now)
-*  v2.1:
-*     - fixed a bug causing directories containg no subfolders not being copied
-*       (affecting lines 181-182) -- SPECIAL THANKS TO onivan!
-*     - fixed a bug causing an error on Unix machines (affecting line 292) --
-*       SPECIAL THANKS TO Caladan!
-* 2020.05.31 - changes by Alexey Torgashin
-*
-*  Greetings,
-*  bastla
 *)
 
 unit CopyDir;
