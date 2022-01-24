@@ -1,14 +1,8 @@
 (**
-*                               TCOPYDIR
-*                               ========
-*                                 v2.1
-*
 *  This unit contains "TCopyDir" class wich copies entire directories (incl. its
 *  subdirectories)
 *
 *  Author: bastla (@ Supernature-Forum / @ Lazarus Forum)
-*  Contact: send me a PM via Lazarus Forum
-*      (http://forum.lazarus.freepascal.org/index.php?action=pm;sa=send;u=49100)
 *  License: Free Domain
 *  Website: http://forum.lazarus.freepascal.org/index.php/topic,20759.0.html
 *
