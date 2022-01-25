@@ -354,12 +354,12 @@ end;
 
 procedure TCopyDir.Start;
 var
-  __startTime: DWord;
+  __startTime: QWord;
   i: Integer;
 begin
   if not self._enumerated then self.Enumerate;
 
-  __startTime := GetTickCount;
+  __startTime := GetTickCount64;
   self._AddToLog('');
   self._AddToLog('COPYING STARTED');
   self._AddToLog('===========================================================');
@@ -424,7 +424,7 @@ begin
   self._AddToLog('Overall ' + IntToStr(Length(self._copyingDone)) + ' files ' +
     'in ' + IntToStr(Length(self._creatingDone)) + ' directories copied!');
   self._AddToLog('===========================================================');
-  self._AddToLog('COPYING DONE (in ' + IntToStr(GetTickCount - __startTime) +
+  self._AddToLog('COPYING DONE (in ' + IntToStr(GetTickCount64 - __startTime) +
     ' ms)');
   self._AddToLog('');
 end;
